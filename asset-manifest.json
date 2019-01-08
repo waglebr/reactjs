@@ -1,15 +1,15 @@
 {
-  "main.css": "/waglebr/reactjs/static/css/main.fb0345f2.chunk.css",
-  "main.js": "/waglebr/reactjs/static/js/main.ab333549.chunk.js",
-  "main.js.map": "/waglebr/reactjs/static/js/main.ab333549.chunk.js.map",
-  "static/css/1.7989c8f9.chunk.css": "/waglebr/reactjs/static/css/1.7989c8f9.chunk.css",
-  "static/js/1.41dbcc49.chunk.js": "/waglebr/reactjs/static/js/1.41dbcc49.chunk.js",
-  "static/js/1.41dbcc49.chunk.js.map": "/waglebr/reactjs/static/js/1.41dbcc49.chunk.js.map",
-  "runtime~main.js": "/waglebr/reactjs/static/js/runtime~main.d730c952.js",
-  "runtime~main.js.map": "/waglebr/reactjs/static/js/runtime~main.d730c952.js.map",
-  "static/css/main.fb0345f2.chunk.css.map": "/waglebr/reactjs/static/css/main.fb0345f2.chunk.css.map",
-  "static/css/1.7989c8f9.chunk.css.map": "/waglebr/reactjs/static/css/1.7989c8f9.chunk.css.map",
-  "index.html": "/waglebr/reactjs/index.html",
-  "precache-manifest.3f437a5b8eb98f6e4476099e268206cd.js": "/waglebr/reactjs/precache-manifest.3f437a5b8eb98f6e4476099e268206cd.js",
-  "service-worker.js": "/waglebr/reactjs/service-worker.js"
+  "main.css": "/reactjs/static/css/main.fb0345f2.chunk.css",
+  "main.js": "/reactjs/static/js/main.3ab8dc7c.chunk.js",
+  "main.js.map": "/reactjs/static/js/main.3ab8dc7c.chunk.js.map",
+  "static/css/1.7989c8f9.chunk.css": "/reactjs/static/css/1.7989c8f9.chunk.css",
+  "static/js/1.41dbcc49.chunk.js": "/reactjs/static/js/1.41dbcc49.chunk.js",
+  "static/js/1.41dbcc49.chunk.js.map": "/reactjs/static/js/1.41dbcc49.chunk.js.map",
+  "runtime~main.js": "/reactjs/static/js/runtime~main.a4e5c756.js",
+  "runtime~main.js.map": "/reactjs/static/js/runtime~main.a4e5c756.js.map",
+  "static/css/main.fb0345f2.chunk.css.map": "/reactjs/static/css/main.fb0345f2.chunk.css.map",
+  "static/css/1.7989c8f9.chunk.css.map": "/reactjs/static/css/1.7989c8f9.chunk.css.map",
+  "index.html": "/reactjs/index.html",
+  "precache-manifest.c8075119313fef1dc0e45df4e3b1bb86.js": "/reactjs/precache-manifest.c8075119313fef1dc0e45df4e3b1bb86.js",
+  "service-worker.js": "/reactjs/service-worker.js"
 }
