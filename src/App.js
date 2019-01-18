@@ -79,37 +79,19 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <main className="container">
-          <Counters
-            quantity={this.state.quantity}
-            onIncrement={this.handleIncrement}
-            onEmpty={this.handleEmpty}
-            onRemove={this.handleRemove}
-            onDecrement={this.handleDecrement}
-          />
-        </main>
+        <Counters
+          quantity={this.state.quantity}
+          onIncrement={this.handleIncrement}
+          onEmpty={this.handleEmpty}
+          onRemove={this.handleRemove}
+          onDecrement={this.handleDecrement}
+        />
         <NavBar
           onReset={this.handleReset}
           qtdTipos={this.state.quantity.filter(i => i.value > 0).length}
           qtdTotal={this.handleTotal()}
+          onUpdate={this.handleUpdate}
         />
-        <div className="input-group input-group-sm">
-          <div className="input-group-prepend">
-            <span className="input-group-text">Product ID:</span>
-          </div>
-          <input className="form-control" id="field1" type="text" />
-        </div>
-        <div className="input-group input-group-sm">
-          <div className="input-group-prepend">
-            <span className="input-group-text">Product Qty:</span>
-          </div>
-          <input className="form-control" id="field2" type="number" />
-        </div>
-        <button
-          className="btn btn-warning btn-sm m-2"
-          onClick={() => this.handleUpdate()}>
-          Save
-        </button>
       </React.Fragment>
     );
   }

@@ -12,11 +12,11 @@ class Counter extends Component {
     return (
       // Returns a new React element:
       <div>
-        <span className="badge mr-2 badge-dark">
+        <span className="badge mr-1 badge-dark">
           <h6>Product {quantity.id} :</h6>
         </span>
         <button
-          className="btn btn-warning btn-sm m-2"
+          className="btn btn-warning btn-sm m-1"
           disabled={quantity.value < -4 ? true : false}
           onClick={() => onDecrement(quantity)}>
           -
@@ -42,14 +42,14 @@ class Counter extends Component {
         </button>
 
         <button
-          className="btn btn-light btn-sm m-2"
+          className="btn btn-light btn-sm m-1"
           disabled={quantity.value <= 0 ? true : false}
           onClick={() => onEmpty(quantity)}>
           Sold out
         </button>
 
         <button
-          className="btn btn-danger btn-sm m-2"
+          className="btn btn-danger btn-sm m-1"
           onClick={() => onRemove(quantity.id)}>
           Remove
         </button>
@@ -58,7 +58,7 @@ class Counter extends Component {
   }
 
   badgeStyle() {
-    let classes = "badge m-2 badge-";
+    let classes = "badge m-1 badge-";
 
     if (this.props.quantity.value <= 0) {
       return (classes += "light");

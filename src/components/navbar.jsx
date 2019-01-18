@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 //Stateless Functional Component
 // destructuring argument (instead of using "props")
-const NavBar = ({ qtdTipos, qtdTotal, onReset }) => {
+const NavBar = ({ qtdTipos, qtdTotal, onReset, onUpdate }) => {
   return (
     <nav className="navbar navbar-dark">
       <nav className="navbar-brand">
@@ -19,6 +19,20 @@ const NavBar = ({ qtdTipos, qtdTotal, onReset }) => {
             Reset
           </button>
         </span>
+        <br />
+        Add Products:
+        <br />
+        <div className="input-group input-group-sm">
+          <span className="badge mr-2 badge-dark">Product ID:</span>
+          <input className="form-control" id="field1" type="text" />
+        </div>
+        <div className="input-group input-group-sm">
+          <span className="badge mr-2 badge-dark">Product Qty:</span>
+          <input className="form-control" id="field2" type="number" />
+        </div>
+        <button className="btn btn-warning btn-sm m-2" onClick={onUpdate}>
+          Save
+        </button>
       </nav>
     </nav>
   );
