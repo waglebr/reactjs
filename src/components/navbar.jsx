@@ -1,24 +1,25 @@
 import React, { Component } from "react";
-
-const NavBar = ({ qtdTipos, qtdTotal }) => {
-  // destructuring argument (instead of using "props")
+//Stateless Functional Component
+// destructuring argument (instead of using "props")
+const NavBar = ({ qtdTipos, qtdTotal, onReset }) => {
   return (
-    <nav className="navbar navbar-light bg-light">
-      {/* Bootstrap css */}
-      <a className="navbar-brand" href="#">
-        Barra de Navegação
-        {/* Bootstrap css  */}
-        Produtos:
+    <nav className="navbar navbar-dark">
+      <nav className="navbar-brand">
+        Sumary:
+        <br />
         <span className="badge badge-pill badge-secondary">
-          {qtdTipos}
-          {/* Bootstrap css  */}
+          Products: {qtdTipos}
         </span>
-        Quantidade total:
+        <br />
         <span className="badge badge-pill badge-secondary">
-          {qtdTotal}
-          {/* Bootstrap css  */}
+          Total Quantity: {qtdTotal}
         </span>
-      </a>
+        <span className="ml-4">
+          <button className="btn btn-primary btn-sm" onClick={onReset}>
+            Reset
+          </button>
+        </span>
+      </nav>
     </nav>
   );
 };

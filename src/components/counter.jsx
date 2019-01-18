@@ -5,11 +5,17 @@ class Counter extends Component {
 
   handleIncrement = () => {
     //It's necessary to use arrow function to inherit the "this" reference: "function name = () => {statement}".
-    this.setState({ counter: this.state.counter + 1 }); // You have to explicitly tell React what's changing so it can keep track of it.
-  };
+    this.setState(prevState => ({
+      counter: prevState.counter + 1
+    }));
+  }; // You have to explicitly tell React what's changing so it can keep track of it.
+
   handleDecrement = () => {
-    this.setState({ counter: this.state.counter - 1 });
+    this.setState(prevState => ({
+      counter: prevState.counter - 1
+    }));
   };
+
   handleEmpty = () => {
     this.setState({ counter: 0 });
   };

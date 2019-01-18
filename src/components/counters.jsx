@@ -6,8 +6,8 @@ class Counters extends Component {
     quantity: [
       { id: "A", value: 1 },
       { id: "B", value: 2 },
-      { id: "C", value: 3 },
-      { id: "D", value: 4 }
+      { id: "C", value: 3 }
+      // { id: "D", value: 4 }
     ]
   };
   handleReset = () => {
@@ -29,6 +29,15 @@ class Counters extends Component {
   render() {
     return (
       <div>
+        {this.state.quantity.map(i => (
+          <Counter
+            onRemove={this.handleRemove}
+            key={i.id}
+            id={i.id}
+            value={i.value}
+          />
+        ))}
+        <br />
         {this.state.quantity.map(i => (
           <Counter
             onRemove={this.handleRemove}

@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/waglebr/reactjs",
+  "homepage": "http://waglebr.github.io/reactjs",
   "dependencies": {
     "bootstrap": "^4.2.1",
     "react": "^16.7.0",
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
